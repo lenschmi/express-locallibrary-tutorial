@@ -17,7 +17,7 @@ var app = express();
 
 // Set up mongoose connection
 var mongoose = require('mongoose');
-var dev_db_url = 'mongodb+srv://Lena:password@cluster0.hdgrp.mongodb.net/local_library?retryWrites=true&w=majority';
+var dev_db_url = '';
 var mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true});
 var db = mongoose.connection;
